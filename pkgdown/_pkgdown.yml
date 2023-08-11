@@ -1,0 +1,31 @@
+url: https://jhelvy.github.io/edata/
+
+home:
+  title: Datasets for Exploratory Data Analysis
+
+template:
+  params:
+    bootswatch: cosmo
+    twitter:
+      creator: "@JohnHelveston"
+      card: summary
+
+navbar:
+  title: "edata"
+  left:
+    - icon: fa-home fa-lg
+      href: index.html
+    - text: "Reference"
+      href: reference/index.html
+    - text: "Changelog"
+      href: news/index.html
+  right:
+   - icon: fa-github
+     href: https://github.com/jhelvy/edata
+
+reference:
+- title: "Data"
+  desc: "Each of the following are data frames contained in this package"
+  contents:
+  - df
+

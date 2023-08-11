@@ -1,0 +1,11 @@
+citHeader("To cite oica in publications use:")
+
+citEntry(
+  entry    = "Manual",
+  title    = "edata: Datasets For Exploratory Data Analysis",
+  author   = "John Paul Helveston",
+  year     = "2023",
+  note     = "R package version 0.0.1",
+  url      = "https://jhelvy.github.io/edata/",
+  textVersion = "John Paul Helveston (2023). edata: Datasets For Exploratory Data Analysis."
+)

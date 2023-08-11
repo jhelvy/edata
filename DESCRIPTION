@@ -1,0 +1,20 @@
+Package: edata
+Title: Datasets For Exploratory Data Analysis
+Version: 0.0.1
+Maintainer: John Helveston <john.helveston@gmail.com>
+Authors@R: c(
+    person(given   = "John",
+           family  = "Helveston",
+           role    = c("cre", "aut", "cph"),
+           email   = "john.helveston@gmail.com",
+           comment = c(ORCID = "0000-0002-2657-9191")))
+Description: A data package with datasets used in the GWU Course Exploratory Data Analysis
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+URL: https://github.com/jhelvy/edata
+BugReports: https://github.com/jhelvy/edata/issues
+Depends: 
+    R (>= 2.10)
