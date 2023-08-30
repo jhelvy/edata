@@ -1,105 +1,38 @@
-#' Vehicle production statistics by country and type
 #'
-#' This data frame contains annual data on vehicle production statistics by
-#' country and type between the years 2006 and 2021 (inclusive) from the OICA.
-#' Standard country / area codes come from the United Nations Statistics
-#' Division. The table below shows a detailed description of each variable.
+#'
+#' This dataset provides information on various Avengers characters, their appearances,
+#' and details about their status (e.g., if they've died and returned). The data
+#' is sourced from the `fivethirtyeight` R package. It contains the raw data behind the story "Joining The Avengers Is As Deadly As Jumping Off A Four-Story Building"
 #'
 #' @format
-#' Variable | Description
-#' -------- | ---------------------------------------------
-#' `year`                     | Year (2006 - 2021)
-#' `country`                  | Country name
-#' `type`      | Vehicle type: pv = passenger vehicle, cv = commercial vehicle
-#' `n`                        | Number of vehicles produced
-#' `region`                   | Country region (continent)
-#' `subregion`                | Country subregion
-#' `intermediate_region`      | Country intermediate region
-#' `least_developed`          | Dummy variable; is country least developed?
-#' `land_locked_developing`   | Dummy variable; is country land-locked developing?
-#' `small_island_developing`  | Dummy variable; is country small island developing?
-#' `code_region`              | Country region code
-#' `code_subregion`           | Country subregion code
-#' `code_intermediate_region` | Country intermediate region code
-#' `code_m49`                 | Country M49 code
-#' `code_iso_alpha2`          | Country ISO alpha 2 code
-#' `code_iso_alpha3`          | Country ISO alpha 3 code
+#' Variable                     | Description
+#' ---------------------------- | ----------------------------------------------------------------------
+#' `url`                        | URL link to the character's profile on Marvel Wiki.
+#' `name_alias`                 | Alias or full name of the Avenger.
+#' `appearances`                | Number of appearances the character made in comic issues.
+#' `current`                    | Logical value indicating if the character is currently an Avenger.
+#' `gender`                     | Gender of the character - MALE or FEMALE.
+#' `probationary_intro`         | Introduction date of the character as a probationary Avenger.
+#' `full_reserve_avengers_intro`| Introduction date of the character in full or reserve Avenger status.
+#' `year`                       | Year the character joined the Avengers.
+#' `years_since_joining`        | Number of years since the character joined.
+#' `honorary`                   | Honorary status of the character in the Avengers.
+#' `death1` to `death5`         | Logical values indicating different instances of the character's death.
+#' `return1` to `return5`       | Logical values indicating different instances of the character's return after death.
+#' `notes`                      | Additional notes regarding the character.
 #'
 #' @docType data
 #'
-#' @usage data(production)
+#' @usage data(avengers)
 #'
 #' @keywords datasets
 #'
-#' @source Raw data downloaded from the
-#' \href{https://www.oica.net/}{Organisation Internationale des Constructeurs d'Automobiles (OICA)}
-#' and the
-#' \href{https://unstats.un.org/unsd/methodology/m49/overview/}{United Nations Statistics Division}
+#' @source Raw data sourced from the
+#' \href{https://fivethirtyeight.com/features/avengers-death-comics-age-of-ultron/}{FiveThirtyEight article}
+#' and the \href{https://www.rdocumentation.org/packages/fivethirtyeight/versions/0.5.0}{fivethirtyeight R package}.
+#' Dictionary can be found \href{https://www.rdocumentation.org/packages/fivethirtyeight/versions/0.5.0/topics/avengers}{here}.
 #'
 #' @examples
-#' data(production)
+#' data(avengers)
 #'
-#' head(production)
-"production"
-
-
-#' Vehicle sales statistics by country and type
-#'
-#' This data frame contains annual data on vehicle sales statistics by
-#' country and type between the years 2005 and 2021 (inclusive) from the OICA.
-#' Standard country / area codes come from the United Nations Statistics
-#' Division. The table below shows a detailed description of each variable.
-#'
-#' @format
-#' Variable | Description
-#' -------- | ---------------------------------------------
-#' `var` | Description
-#'
-#' @docType data
-#'
-#' @usage data(sales_country)
-#'
-#' @keywords datasets
-#'
-#' @source Raw data downloaded from the
-#' \href{https://www.oica.net/}{Organisation Internationale des Constructeurs d'Automobiles (OICA)}
-#' and the
-#' \href{https://unstats.un.org/unsd/methodology/m49/overview/}{United Nations Statistics Division}
-#'
-#' @examples
-#' data(sales_country)
-#'
-#' head(sales_country)
-"sales_country"
-
-#' Vehicle sales statistics by region and type
-#'
-#' This data frame contains annual data on vehicle sales statistics by
-#' region and type between the years 2005 and 2021 (inclusive) from the OICA.
-#' Standard country / area codes come from the United Nations Statistics
-#' Division. The table below shows a detailed description of each variable.
-#'
-#' @format
-#' Variable | Description
-#' -------- | ---------------------------------------------
-#' `year`   | Year (2005 - 2021)
-#' `region` | Region name
-#' `type`   | Vehicle type: pv = passenger vehicle, cv = commercial vehicle
-#' `n`      | Number of vehicles produced
-#'
-#' @docType data
-#'
-#' @usage data(sales_region)
-#'
-#' @keywords datasets
-#'
-#' @source Raw data downloaded from the
-#' \href{https://www.oica.net/}{Organisation Internationale des Constructeurs d'Automobiles (OICA)}
-#' and the
-#' \href{https://unstats.un.org/unsd/methodology/m49/overview/}{United Nations Statistics Division}
-#'
-#' @examples
-#' data(sales_region)
-#'
-#' head(sales_region)
-"sales_region"
+#' head(avengers)
